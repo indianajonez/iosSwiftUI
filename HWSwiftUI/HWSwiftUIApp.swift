@@ -11,7 +11,7 @@ import SwiftUI
 struct HWSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView(logged: .constant(false))
         }
     }
 }
