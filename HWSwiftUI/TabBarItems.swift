@@ -10,8 +10,9 @@ import SwiftUI
 struct TabBarItems: View {
     
     @State private var isLogin = false
-    @State private var titleOn = false
-    @StateObject private var appSettings = AppSettings()
+    @AppStorage("titleOn") private var titleOn = false
+//    @State private var titleOn = false
+    
     
     var body: some View {
         //tab bar with items
@@ -43,7 +44,7 @@ struct TabBarItems: View {
                 .tabItem {
                     Label("Video", systemImage: "play.rectangle")
                 }
-            SettingsView(titleOn: $titleOn)
+            SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "slider.horizontal.3")
                 }

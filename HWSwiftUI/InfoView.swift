@@ -10,7 +10,7 @@ import SwiftUI
 struct InfoView: View {
     
     @Binding var titleOn: Bool
-    @StateObject private var appSettings = AppSettings()
+    
     
     var body: some View {
         //show the this of sample data
@@ -28,7 +28,6 @@ struct InfoView: View {
             }
             
             .navigationTitle(titleOn ? "" : "Anthropology")
-            .navigationTitle(appSettings.isTitleEnabled ? "Anthropology" : "")
                     
             .listStyle(.plain)
         }

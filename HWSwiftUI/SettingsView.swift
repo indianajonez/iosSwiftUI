@@ -11,14 +11,14 @@ struct SettingsView: View {
     //connect to actual color scheme in iOS enviroment
     @Environment(\.colorScheme) var colorScheme
     @AppStorage("isThemeMode") private var isThemeMode = false
-//    @AppStorage("titleOn") private var titleOn = false
+    @AppStorage("titleOn") private var titleOn = false
     
     @State private var linkOn = false
     @State private var toggler = true
     
     @State private var sliderValue = 10.0
     @State private var isChanging = false
-    @Binding var titleOn: Bool
+//    @Binding var titleOn: Bool
     
     var body: some View {
         ZStack {
@@ -52,8 +52,8 @@ struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView(titleOn: .constant(true))
-    }
-}
+//struct SettingsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingsView(titleOn: .constant(true))
+//    }
+//}
