@@ -10,26 +10,29 @@ import SwiftUI
 struct TabBarItems: View {
     
     @State private var isLogin = false
+    @State private var titleOn = false
+    @StateObject private var appSettings = AppSettings()
     
     var body: some View {
         //tab bar with items
         TabView() {
             
-            FeedView()
-                .tabItem {
-                    Label("Feed", systemImage: "house.fill")
-                }
             
             // if user is logged show the profile-view, login-view otherwise
             if isLogin {
-                ProfileView()
+                InfoView(titleOn: $titleOn)
                     .tabItem {
-                        Label("Profile", systemImage: "person.fill")
+                        Label("Profile", systemImage: "person.fill.checkmark")
                     }
             } else {
                 LoginView(logged:  $isLogin)
                     .tabItem {
                         Label("Login", systemImage: "person")
+                    }
+                
+                FeedView()
+                    .tabItem {
+                        Label("Feed", systemImage: "house.fill")
                     }
             }
             PlayerView()
@@ -39,6 +42,10 @@ struct TabBarItems: View {
             VideoView()
                 .tabItem {
                     Label("Video", systemImage: "play.rectangle")
+                }
+            SettingsView(titleOn: $titleOn)
+                .tabItem {
+                    Label("Settings", systemImage: "slider.horizontal.3")
                 }
         }
     }

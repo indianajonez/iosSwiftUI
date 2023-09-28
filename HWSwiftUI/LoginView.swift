@@ -26,8 +26,8 @@ struct LoginView: View {
             Image("vk")
                 .resizable()
                 .frame(width: 140, height: 140)
-                .shadow(radius: 12)
-                .padding(.top, -100)
+                .shadow(radius: 10)
+                .padding(.top, 150)
             
             // login and password text fields
             VStack(spacing: -0.5) {
@@ -38,6 +38,7 @@ struct LoginView: View {
                     .modifier(TextFielder())
                     .focused($focused, equals: .passwordField)
             }
+            
             .cornerRadius(12)
             .padding(.top, 60)
             .padding()
@@ -57,31 +58,17 @@ struct LoginView: View {
                     .frame(height: 50)
                     .foregroundColor(.white)
             }
+            
             .frame(maxWidth: .infinity , maxHeight: 50)
             .background(Color(.systemBlue))
             .cornerRadius(12)
             .padding()
             
-            NavigationView {
-                //show the this of sample data
-                List(Post.data) { post in
-                    
-                    NavigationLink {
-                        // link to details view
-                        InfoDetailsView(post: post)
-                    } label: {
-                        // view to represent one row of data with image and title
-                        InfoRowView(post: post)
-                    }
-                }
-                .navigationTitle("Anthropology")
-                .listStyle(.plain)
-            }
-
+            Spacer()
         }
     }
 }
-
+ 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView(logged: .constant(false))

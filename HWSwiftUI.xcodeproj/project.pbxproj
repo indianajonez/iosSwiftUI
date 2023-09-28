@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3046B042AC4415E009683B3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3046B032AC4415E009683B3 /* SettingsView.swift */; };
+		F38325172AC5F94200982F68 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38325162AC5F94200982F68 /* AppSettings.swift */; };
 		F3AE8E7E2ABD8D6F0099A7F7 /* HWSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8E7D2ABD8D6F0099A7F7 /* HWSwiftUIApp.swift */; };
 		F3AE8E802ABD8D6F0099A7F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8E7F2ABD8D6F0099A7F7 /* LoginView.swift */; };
 		F3AE8E822ABD8D760099A7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AE8E812ABD8D760099A7F7 /* Assets.xcassets */; };
@@ -20,9 +22,13 @@
 		F3AE8E992ABDA89D0099A7F7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8E982ABDA89D0099A7F7 /* Post.swift */; };
 		F3AE8E9B2ABDA8F00099A7F7 /* InfoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8E9A2ABDA8F00099A7F7 /* InfoDetailsView.swift */; };
 		F3AE8E9D2ABDA91F0099A7F7 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8E9C2ABDA91F0099A7F7 /* InfoRowView.swift */; };
+		F3AE8EA12AC339490099A7F7 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE8EA02AC339490099A7F7 /* InfoView.swift */; };
+		F3FF2F2C2AC35280003681BE /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3FF2F2B2AC35280003681BE /* test.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3046B032AC4415E009683B3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F38325162AC5F94200982F68 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F3AE8E7A2ABD8D6F0099A7F7 /* HWSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AE8E7D2ABD8D6F0099A7F7 /* HWSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWSwiftUIApp.swift; sourceTree = "<group>"; };
 		F3AE8E7F2ABD8D6F0099A7F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		F3AE8E982ABDA89D0099A7F7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F3AE8E9A2ABDA8F00099A7F7 /* InfoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailsView.swift; sourceTree = "<group>"; };
 		F3AE8E9C2ABDA91F0099A7F7 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
+		F3AE8EA02AC339490099A7F7 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		F3FF2F2B2AC35280003681BE /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = test.mp3; path = ../../../test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +81,19 @@
 				F3AE8E7F2ABD8D6F0099A7F7 /* LoginView.swift */,
 				F3AE8E8B2ABD961E0099A7F7 /* TextFielder.swift */,
 				F3AE8E8D2ABDA1090099A7F7 /* TabBarItems.swift */,
+				F3AE8EA02AC339490099A7F7 /* InfoView.swift */,
 				F3AE8E8F2ABDA1FE0099A7F7 /* ProfileView.swift */,
 				F3AE8E912ABDA3FB0099A7F7 /* FeedView.swift */,
 				F3AE8E932ABDA4350099A7F7 /* PlayerView.swift */,
 				F3AE8E952ABDA4E30099A7F7 /* VideoView.swift */,
 				F3AE8E9A2ABDA8F00099A7F7 /* InfoDetailsView.swift */,
 				F3AE8E9C2ABDA91F0099A7F7 /* InfoRowView.swift */,
+				F3046B032AC4415E009683B3 /* SettingsView.swift */,
+				F3FF2F2B2AC35280003681BE /* test.mp3 */,
 				F3AE8E972ABDA88B0099A7F7 /* Model */,
 				F3AE8E812ABD8D760099A7F7 /* Assets.xcassets */,
 				F3AE8E832ABD8D760099A7F7 /* Preview Content */,
+				F38325162AC5F94200982F68 /* AppSettings.swift */,
 			);
 			path = HWSwiftUI;
 			sourceTree = "<group>";
@@ -162,6 +174,7 @@
 			files = (
 				F3AE8E852ABD8D760099A7F7 /* Preview Assets.xcassets in Resources */,
 				F3AE8E822ABD8D760099A7F7 /* Assets.xcassets in Resources */,
+				F3FF2F2C2AC35280003681BE /* test.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,15 +187,18 @@
 			files = (
 				F3AE8E8C2ABD961E0099A7F7 /* TextFielder.swift in Sources */,
 				F3AE8E802ABD8D6F0099A7F7 /* LoginView.swift in Sources */,
+				F38325172AC5F94200982F68 /* AppSettings.swift in Sources */,
 				F3AE8E942ABDA4350099A7F7 /* PlayerView.swift in Sources */,
 				F3AE8E902ABDA1FE0099A7F7 /* ProfileView.swift in Sources */,
 				F3AE8E962ABDA4E30099A7F7 /* VideoView.swift in Sources */,
+				F3AE8EA12AC339490099A7F7 /* InfoView.swift in Sources */,
 				F3AE8E9B2ABDA8F00099A7F7 /* InfoDetailsView.swift in Sources */,
 				F3AE8E7E2ABD8D6F0099A7F7 /* HWSwiftUIApp.swift in Sources */,
 				F3AE8E992ABDA89D0099A7F7 /* Post.swift in Sources */,
 				F3AE8E922ABDA3FB0099A7F7 /* FeedView.swift in Sources */,
 				F3AE8E8E2ABDA1090099A7F7 /* TabBarItems.swift in Sources */,
 				F3AE8E9D2ABDA91F0099A7F7 /* InfoRowView.swift in Sources */,
+				F3046B042AC4415E009683B3 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

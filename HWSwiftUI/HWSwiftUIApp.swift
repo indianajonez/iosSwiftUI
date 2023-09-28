@@ -11,7 +11,9 @@ import SwiftUI
 struct HWSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView(logged: .constant(false))
+            
+//            LoginView(logged: .constant(false))
+            TabBarItems()
         }
     }
 }
