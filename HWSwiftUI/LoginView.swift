@@ -14,7 +14,7 @@ struct LoginView: View {
         case passwordField
     }
     
-    @Binding var logged: Bool
+    @Binding var logged: Bool //тест
     
     @State private var login: String = ""
     @State private var password: String = ""

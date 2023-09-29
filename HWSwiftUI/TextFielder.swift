@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TextFielder: ViewModifier {
+struct TextFielder: ViewModifier { //тест
     func body(content: Content) -> some View {
         content
             .frame(height: 50)
